@@ -29,6 +29,12 @@ export default function Index() {
   return (
     <View style={styles.screen}>
       <Text>Welcome to the Home Page!</Text>
+      <TouchableOpacity style={styles.btn} onPress={() => router.push("/topup")}>
+          <Text style={styles.btntxt}>Top Up</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.btn} onPress={() => router.push("/transfer")}>
+          <Text style={styles.btntxt}>Transfer</Text>
+      </TouchableOpacity>
     </View>
   );
 }
